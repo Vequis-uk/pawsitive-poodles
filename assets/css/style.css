@@ -1,5 +1,11 @@
+/* Custom Font */
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/fonts/FacultyGlyphic-Regular.ttf") format("truetype");
+}
+
 /* naughty fix for header */
 body {
-  margin-top: 150px;
+  margin-top: 14vh;
   background: #407088;
 }

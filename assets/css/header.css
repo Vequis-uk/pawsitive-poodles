@@ -11,6 +11,8 @@
   right: 0;
   z-index: 1000;
   height: 10vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   .main-header-logo {
     width: 250px;

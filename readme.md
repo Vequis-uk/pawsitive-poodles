@@ -50,7 +50,7 @@
 - "I love working with Pawsitive Poodles, I love seeing the residents faces light up when they see the dogs." - Pawsitive Poodles Volunteer
 
 ### About Us:
-- We work specifically with Poodles as they are hypoallergenic and are great for people with allergies. We have a range of Poodles that we bring to different locations to help people with their mental health. We have been working with Poodles for 10 years and have seen the positive impact they have on people's lives.
+- We work specifically with Poodles as they are hypoallergenic and are great for people with allergies. We have a range of Poodles that we bring to different locations to help people with their mental health. We have been working with Poodles for 10 years and have seen the positive impact they have on people's lives. We also offer a walking service where one of our team will take a small group on a local walk, we have found that this has been a key tool in getting people out to see the beauty of the English countryside. Which in turn has a positive impact on their mental health.
 
 ### Events:
 - We also have events where you can come meet the Poodles and have a chat with us. We have a range of events coming up, see below for more information.
