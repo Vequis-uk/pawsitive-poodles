@@ -1,40 +1,88 @@
 .top-hero-container {
   display: flex;
-  flex-direction: row;
-
-  .shadow-hero {
-    max-width: 50vw;
-    max-height: 50vh;
-    border-radius: 10px;
-    border: 5px solid #c53683;
-    margin: 0 20px 0 20px;
-  }
-
-  .top-hero-about-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: #352961;
-    color: #fff;
-    border-radius: 10px;
-    margin-left: 20px;
-    max-width: 50vw;
-    max-height: 50vh;
-    font-size: 1.5rem;
-  }
+  flex-direction: row; /* Keep them side by side by default */
+  justify-content: space-between; /* Ensure the content is spaced out */
+  align-items: center; /* Vertically center the items */
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
-.top-hero-container-bottom-section {
+.shadow-hero {
+  width: 50vw; /* Allow the image to take up a portion of the width */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 990px;
+  max-height: 665px;
+  border-radius: 10px;
+  border: 5px solid #c53683;
+  margin: 0 20px;
+}
+
+.top-hero-about-us {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #352961;
+  color: #fff;
+  border-radius: 10px;
+  max-width: 50vw;
+  max-height: 50vh;
+  font-size: 1.5rem;
+}
+
+.top-hero-paragraph-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
   background-color: #352961;
   color: #fff;
   border-radius: 10px;
-  margin-top: 20px;
+  margin: 20px;
+  max-width: 50vw;
+  max-height: 50vh;
   font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .top-hero-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the content */
+  }
+
+  .shadow-hero {
+    width: 45vw; /* Reduce the image width on smaller screens */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    max-height: 40vh; /* Limit image height */
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+
+  .top-hero-about-us,
+  .top-hero-paragraph-container {
+    max-width: 80vw; /* Increase max width to take up more space */
+    max-height: 80vh; /* Limit height to maintain readability */
+    font-size: 2rem; /* Adjust font size for readability */
+  }
+}
+
+@media (max-width: 600px) {
+  .top-hero-container {
+    flex-wrap: wrap; /* Allow wrapping on very small screens */
+    justify-content: center;
+  }
+
+  .shadow-hero {
+    width: 100%; /* Let the image take up the full width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Reduce margin */
+  }
+
+  .top-hero-about-us,
+  .top-hero-paragraph-container {
+    max-width: 90vw; /* Make elements take up more space on mobile */
+    max-height: 80vh; /* Adjust height */
+    font-size: 1rem; /* Further reduce font size */
+  }
 }

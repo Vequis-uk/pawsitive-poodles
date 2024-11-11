@@ -1,7 +1,12 @@
 /* Custom Font */
 @font-face {
-  font-family: "CustomFont";
-  src: url("assets/fonts/FacultyGlyphic-Regular.ttf") format("truetype");
+  font-family: "PoodleFont";
+  src: url("../../pawsitive-poodles/assets/fonts/FacultyGlyphic-Regular.ttf")
+    format("truetype");
+}
+
+* {
+  font-family: "PoodleFont", sans-serif;
 }
 
 /* naughty fix for header */

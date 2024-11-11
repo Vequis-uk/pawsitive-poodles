@@ -41,6 +41,8 @@
 - [Images] - Taken by myself or the Pawsitive Poodles team
 - [Video](https://www.youtube.com/watch?v=EjGOONQgr8I)
 - [Favicon](https://favicon.io/)
+- [Font](https://fonts.google.com/specimen/Faculty+Glyphic)
+- Used ChatGPT to help flesh out top-hero responsiveness on mobile (had media queries previously)
 
 ## Pre-Site Content:
 
