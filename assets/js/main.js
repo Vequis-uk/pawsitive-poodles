@@ -11,6 +11,7 @@ function loadComponent(filePath, elementId) {
 function loadAllComponents() {
   loadComponent("components/header.html", "poodle-header");
   loadComponent("components/top-hero.html", "poodle-top-hero");
+  loadComponent("components/testimonials.html", "poodle-testimonials");
 }
 
 /* Watches to see if the dom is loaded and runs loadAllComponents if it is */
