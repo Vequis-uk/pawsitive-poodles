@@ -38,6 +38,9 @@
 - [Inspiration](https://petsastherapy.org/)
 - [Logo](https://logo.com/)
 - [Colour Picker](https://palettes.shecodes.io/)
+- [Images] - Taken by myself or the Pawsitive Poodles team
+- [Video](https://www.youtube.com/watch?v=EjGOONQgr8I)
+- [Favicon](https://favicon.io/)
 
 ## Pre-Site Content:
 
