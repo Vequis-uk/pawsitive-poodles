@@ -1,3 +1,4 @@
+// Array of objects - the testimonials and images
 const testimonials = [
   {
     text: "This is the first testimonial.",
@@ -13,17 +14,23 @@ const testimonials = [
   },
 ];
 
-// Initialise the index to 0 - first testimonial
+// Set the initial index to 0 - first testimonial
 let currentIndex = 0;
 
-// Function to iterate through the array of testimonials
-function showNextTestimonial() {
-  currentIndex = (currentIndex + 1) % testimonials.length;
+function showTestimonial(index) {
   document.getElementById("testimonial-text").textContent =
-    testimonials[currentIndex].text;
-  document.getElementById("testimonial-image").src =
-    testimonials[currentIndex].image;
+    testimonials[index].text;
+  document.getElementById("testimonial-image").src = testimonials[index].image;
 }
 
-// Set up the interval to automatically switch every 5 seconds
-setInterval(showNextTestimonial, 5000);
+// Iterate through the testimonials array
+function showNextTestimonial() {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+}
+
+// Initialize the first testimonial on page load
+document.addEventListener("DOMContentLoaded", () => {
+  showTestimonial(currentIndex); // Display the first testimonial
+  setInterval(showNextTestimonial, 5000); // Set up the interval to switch every 5 seconds
+});

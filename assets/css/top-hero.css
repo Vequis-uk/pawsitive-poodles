@@ -11,7 +11,7 @@
   height: auto; /* Maintain the aspect ratio */
   max-width: 990px;
   max-height: 665px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 5px solid #c53683;
   margin: 0 20px;
 }
@@ -24,7 +24,6 @@
   padding: 5px;
   background-color: #352961;
   color: #fff;
-  border-radius: 10px;
   max-width: 50vw;
   max-height: 50vh;
   font-size: 1.5rem;
@@ -38,7 +37,7 @@
   padding: 10px 30px;
   background-color: #352961;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px;
   max-width: 50vw;
   max-height: 50vh;
