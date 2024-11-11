@@ -10,6 +10,7 @@ function loadComponent(filePath, elementId) {
 /* Function that will load list of components below */
 function loadAllComponents() {
   loadComponent("components/header.html", "poodle-header");
+  loadComponent("components/top-hero.html", "poodle-top-hero");
 }
 
 /* Watches to see if the dom is loaded and runs loadAllComponents if it is */
