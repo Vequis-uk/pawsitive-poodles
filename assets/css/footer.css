@@ -9,6 +9,13 @@
   font-size: 1.2rem;
 }
 
+/* Todo look at fixing footer on mobile */
+@media screen and (max-width: 830px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
 .footer-left {
   display: flex;
   flex-direction: row;
