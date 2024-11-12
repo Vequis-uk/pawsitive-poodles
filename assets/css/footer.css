@@ -18,6 +18,11 @@
   }
 }
 
+.poodle-copyright {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
 .mental-health-image {
   margin-top: 10px;
   height: 200px;
@@ -25,8 +30,22 @@
   border-radius: 20px;
 }
 
+.contact-information-links {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-information-links:hover {
+  color: #c53683;
+}
+
 /* Bit of a bodge - better using SVGs - can set colour directly then */
 .social-media-icon {
   filter: invert(22%) sepia(84%) saturate(3264%) hue-rotate(312deg)
     brightness(97%) contrast(101%);
+}
+
+.social-media-icon:hover {
+  filter: invert(22%) sepia(84%) saturate(3264%) hue-rotate(312deg)
+    brightness(97%) contrast(101%) drop-shadow(0 0 5px #fff);
 }
