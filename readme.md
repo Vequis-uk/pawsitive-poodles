@@ -42,7 +42,7 @@
 - [Video](https://www.youtube.com/watch?v=EjGOONQgr8I)
 - [Favicon](https://favicon.io/)
 - [Font](https://fonts.google.com/specimen/Faculty+Glyphic)
-- [Social Media Icons](https://www.flaticon.com/free-icons/social-media)
+- [Social Media Icons](https://icons8.com/icons/set/social-media)
 - Used ChatGPT to help flesh out top-hero responsiveness on mobile (had media queries previously)
 
 ## Pre-Site Content:

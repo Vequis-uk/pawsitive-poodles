@@ -15,6 +15,7 @@ function loadAllComponents() {
   loadComponent("components/header.html", "poodle-header");
   loadComponent("components/top-hero.html", "poodle-top-hero");
   loadComponent("components/testimonials.html", "poodle-testimonials");
+  loadComponent("components/footer.html", "poodle-footer");
 }
 
 /* Watches to see if the dom is loaded and runs loadAllComponents if it is */

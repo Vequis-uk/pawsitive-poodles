@@ -8,8 +8,7 @@
   font-family: "PoodleFont", sans-serif;
 }
 
-/* naughty fix for header */
 body {
-  margin-top: 14vh;
   background: #407088;
+  margin: 0;
 }

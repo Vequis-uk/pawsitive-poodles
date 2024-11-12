@@ -1,0 +1,32 @@
+.footer-container {
+  display: flex;
+  padding: 20px;
+  color: #fff;
+  background: #352961;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: row;
+
+  .footer-contact {
+    padding: 0 20px;
+  }
+}
+
+.mental-health-image {
+  margin-top: 10px;
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+/* Bit of a bodge - better using SVGs - can set colour directly then */
+.social-media-icon {
+  filter: invert(22%) sepia(84%) saturate(3264%) hue-rotate(312deg)
+    brightness(97%) contrast(101%);
+}

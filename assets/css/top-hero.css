@@ -4,6 +4,8 @@
   justify-content: space-between; /* Ensure the content is spaced out */
   align-items: center; /* Vertically center the items */
   flex-wrap: nowrap; /* Prevent wrapping */
+  /* Naughty fix for floating header */
+  margin-top: 14vh;
 }
 
 .shadow-hero {
