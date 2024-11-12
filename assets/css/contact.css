@@ -4,4 +4,112 @@
   align-items: center;
   height: 100vh;
   background-color: #407088;
+  flex-wrap: wrap;
+}
+
+.poodle-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0;
+  min-height: 900px;
+  min-width: 600px;
+  max-width: 90vw;
+  max-height: 80vh;
+  background-color: #352961;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.poodle-form-label {
+  margin-bottom: 10px;
+}
+
+.poodle-form-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #c53683;
+  color: #c53683;
+  height: 40px;
+  width: 40%;
+  font-size: 1.4rem;
+}
+
+.poodle-form-dropdown {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid #c53683;
+  height: 70px;
+  width: 45%;
+  font-size: 1.4rem;
+}
+
+.poodle-form-textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #c53683;
+  color: #c53683;
+  height: 200px;
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+/* Bit naughty as this is repeated code, should really be a component or similar */
+.poodle-button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #c53683;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+}
+
+.poodle-button:hover {
+  color: #000;
+  background-color: #e6b2c6;
+}
+
+/* Popup container */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
 }

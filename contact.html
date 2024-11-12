@@ -20,24 +20,24 @@
     <link
       rel="icon"
       type="image/png"
-      href="/assets/images/favicon/favicon.ico"
+      href="../../pawsitive-poodles/assets/images/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/images/favicon/apple-touch-icon.png"
+      href="../../pawsitive-poodles/assets/images/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/assets/images/favicon/favicon-32x32.png"
+      href="../../pawsitive-poodles/assets/images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/assets/images/favicon/favicon-16x16.png"
+      href="../../pawsitive-poodles/assets/images/favicon/favicon-16x16.png"
     />
     <!-- ^Favicons^ -->
   </head>
@@ -46,10 +46,11 @@
     <div id="poodle-header"></div>
     <!-- ^Header^ -->
     <div class="contact-main-container">
-      <form action="">
+      <form class="poodle-form" action="">
         <!-- First Name -->
-        <label for="fname">First Name:</label>
+        <label class="poodle-form-label" for="fname">First Name:</label>
         <input
+          class="poodle-form-input"
           type="text"
           id="fname"
           name="firstname"
@@ -58,8 +59,9 @@
         <!-- ^First Name^ -->
 
         <!-- Last Name -->
-        <label for="lname">Last Name:</label>
+        <label class="poodle-form-label" for="lname">Last Name:</label>
         <input
+          class="poodle-form-input"
           type="text"
           id="lname"
           name="lastname"
@@ -68,8 +70,9 @@
         <!-- ^Last Name^ -->
 
         <!-- Email -->
-        <label for="email">Email:</label>
+        <label class="poodle-form-label" for="email">Email:</label>
         <input
+          class="poodle-form-input"
           type="text"
           id="email"
           name="email"
@@ -78,8 +81,8 @@
         <!-- ^Email^ -->
 
         <!-- Country -->
-        <label for="country">Country:</label>
-        <select id="country" name="country">
+        <label class="poodle-form-label" for="country">Country:</label>
+        <select class="poodle-form-dropdown" id="country" name="country">
           <option value="united-kingdom">United Kingdom</option>
           <option value="france">France</option>
           <option value="germany">Germany</option>
@@ -88,17 +91,43 @@
         <!-- ^Country^ -->
 
         <!-- Email -->
-        <label for="subject">Subject:</label>
+        <label class="poodle-form-label" for="subject">Subject:</label>
         <textarea
+          class="poodle-form-textarea"
           id="subject"
           name="subject"
           placeholder="Type Here..."
         ></textarea>
         <!-- ^Email^ -->
+
+        <button class="poodle-button" onclick="openPopup()">Submit</button>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>This is a popup message!</p>
+          </div>
+        </div>
       </form>
     </div>
     <!-- Footer -->
     <div id="poodle-footer"></div>
     <!-- ^Footer^ -->
+    <script>
+      function openPopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "flex";
+
+        // Add an event listener to close the popup when clicking outside of the popup content
+        popup.addEventListener("click", function (event) {
+          if (event.target === popup) {
+            closePopup();
+          }
+        });
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
   </body>
 </html>
