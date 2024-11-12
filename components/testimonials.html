@@ -5,62 +5,10 @@
 />
 <!-- ^Stylesheet^ -->
 
-<!-- JavaScript -->
-<script defer>
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM fully loaded and parsed");
-
-    // Array of objects - the testimonials and images
-    const testimonials = [
-      {
-        text: "This is the first testimonial.",
-        image:
-          "../../pawsitive-poodles/assets/images/pawsitive-poodles-logo.png",
-      },
-      {
-        text: "This is the second testimonial.",
-        image:
-          "../../pawsitive-poodles/assets/images/pawsitive-poodles-logo.png",
-      },
-      {
-        text: "This is the third testimonial.",
-        image:
-          "../../pawsitive-poodles/assets/images/pawsitive-poodles-logo.png",
-      },
-    ];
-
-    // Set the initial index to 0 - first testimonial
-    let currentIndex = 0;
-
-    function showTestimonial(index) {
-      const textElement = document.getElementById("testimonial-text");
-      const imageElement = document.getElementById("testimonial-image");
-
-      if (textElement && imageElement) {
-        textElement.textContent = testimonials[index].text;
-        imageElement.src = testimonials[index].image;
-        console.log(`Showing testimonial ${index + 1}`);
-      } else {
-        console.error("Elements not found");
-      }
-    }
-
-    // Iterate through the testimonials array
-    function showNextTestimonial() {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      showTestimonial(currentIndex);
-    }
-
-    // Initialize the first testimonial on page load
-    showTestimonial(currentIndex); // Display the first testimonial
-    setInterval(showNextTestimonial, 5000); // Set up the interval to switch every 5 seconds
-  });
-</script>
-<!-- ^JavaScript^ -->
-
 <div class="testimonial-section">
   <div class="testimonial-content">
     <p id="testimonial-text">Loading testimonial...</p>
+    <p id="testimonial-who">Loading testimonial who...</p>
     <!-- Leave empty initially -->
     <img id="testimonial-image" alt="Testimonial Image" />
     <!-- Leave src empty initially -->
