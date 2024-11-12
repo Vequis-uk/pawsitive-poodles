@@ -1,4 +1,5 @@
-/* Function that accepts file path and element id in order to inject into this index.html */
+/* Function that accepts file path and element id in order to inject into current page */
+/* Now skips element if element is not present */
 function loadComponent(filePath, elementId) {
   fetch(filePath)
     .then((response) => response.text())

@@ -7,18 +7,13 @@
   border-top-right-radius: 20px;
   justify-content: space-evenly;
   font-size: 1.2rem;
-}
-
-/* Todo look at fixing footer on mobile */
-@media screen and (max-width: 830px) {
-  .footer-container {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
 }
 
 .footer-left {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   .footer-contact {
     padding: 0 20px;
