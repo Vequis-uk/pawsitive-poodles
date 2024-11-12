@@ -1,8 +1,7 @@
 /* Custom Font */
 @font-face {
   font-family: "PoodleFont";
-  src: url("../../pawsitive-poodles/assets/fonts/FacultyGlyphic-Regular.ttf")
-    format("truetype");
+  src: url("../../assets/fonts/FacultyGlyphic-Regular.ttf") format("truetype");
 }
 
 * {

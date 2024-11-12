@@ -1,6 +1,4 @@
 function initializeTestimonials() {
-  console.log("Testimonials component loaded");
-
   // Array of objects - the testimonials and images
   const testimonials = [
     {
