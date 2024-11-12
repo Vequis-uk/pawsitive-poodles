@@ -3,11 +3,15 @@ function loadComponent(filePath, elementId) {
   fetch(filePath)
     .then((response) => response.text())
     .then((text) => {
-      document.getElementById(elementId).innerHTML = text;
-      if (elementId === "poodle-testimonials") {
-        loadTestimonialsScript();
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.innerHTML = text;
+        if (elementId === "poodle-testimonials") {
+          loadTestimonialsScript();
+        }
       }
-    });
+    })
+    .catch((error) => console.error("Error loading component:", error));
 }
 
 /* Function that will load list of components below */
