@@ -12,3 +12,8 @@ body {
   background: #407088;
   margin: 0;
 }
+
+/* Bit of a bodge to make clicking anchor tag smooth */
+html {
+  scroll-behavior: smooth;
+}
