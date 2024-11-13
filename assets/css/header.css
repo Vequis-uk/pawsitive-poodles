@@ -14,52 +14,71 @@
   height: 15vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.main-header-logo {
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.main-header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.main-header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #c53683;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+}
+
+.main-header-button:hover {
+  color: #000;
+  background-color: #e6b2c6;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 800px) {
+  .main-header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
 
   .main-header-logo {
-    width: 250px;
-    height: 100px;
-    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    margin-bottom: 10px;
   }
 
   .main-header-navigation {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 0;
+    padding: 0;
+  }
 
-    .main-header-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 20px;
-      margin-left: 20px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-      background-color: #c53683;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      min-width: 150px;
-
-      &:hover {
-        color: #000;
-        background-color: #e6b2c6;
-      }
-
-      // todo media query not working properly on mobile
-      @media screen and (max-width: 600px) {
-        .main-header-button {
-          padding: 10px 10px;
-          font-size: 2.5rem;
-          min-width: 200px;
-        }
-      }
-    }
+  .main-header-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    min-width: 100px;
+    margin: 5px;
   }
 }

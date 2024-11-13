@@ -66,4 +66,5 @@
 - Possible Colours - HEX: #C43835 (Red), #407088 (Blue), #132743 (Dark-Blue), #352961 (Dark-Purple), #e6b2c6 (Light-Pink)
 
 ### Bugs:
-- The form on the contact page, the submission closes instantly. I have added an event listener for the click, but I am unsure why this has not resolved it, has worked for myself in the past. 
+- The form on the contact page, the submission closes instantly. I have added an event listener for the click, but I am unsure why this has not resolved it, has worked for myself in the past.
+- About and contact header is not responsive on mobile, yet it is on the home page, needs looking at.
