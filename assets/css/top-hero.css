@@ -31,6 +31,22 @@
   font-size: 1.5rem;
 }
 
+.top-hero-about-us-with-link {
+  white-space: nowrap;
+  text-wrap: wrap;
+}
+
+.top-hero-about-us-with-link a {
+  text-decoration: none;
+  color: #c53683;
+  margin-left: 4px;
+  font-weight: bolder;
+}
+
+.top-hero-about-us-with-link a:hover {
+  color: #e6b2c6;
+}
+
 .top-hero-paragraph-container {
   display: flex;
   flex-direction: column;
