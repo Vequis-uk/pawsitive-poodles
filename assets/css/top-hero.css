@@ -5,7 +5,7 @@
   align-items: center; /* Vertically center the items */
   flex-wrap: nowrap; /* Prevent wrapping */
   /* Naughty fix for floating header */
-  margin-top: 14vh;
+  margin-top: 20vh;
 }
 
 .shadow-hero {

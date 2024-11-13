@@ -10,7 +10,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  height: 10vh;
+  max-height: 130px;
+  height: 15vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
