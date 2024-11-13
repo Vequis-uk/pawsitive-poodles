@@ -35,9 +35,23 @@
 
 .testimonial-content img {
   width: 100%; /* Set to 100% to fit within the container */
-  max-width: 300px; /* Limit max-width to avoid stretching */
+  max-width: 800px; /* Limit max-width to avoid stretching */
   height: auto;
   border-radius: 20px;
   border: 5px solid #c53683;
   margin-top: 10px;
+}
+
+/* IFRAME STUFFS */
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 50px 10px;
+
+  .iframe-video {
+    border-radius: 20px;
+    border: 5px solid #352961;
+  }
 }

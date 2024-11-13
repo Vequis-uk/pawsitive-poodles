@@ -68,3 +68,4 @@
 ### Bugs:
 - The form on the contact page, the submission closes instantly. I have added an event listener for the click, but I am unsure why this has not resolved it, has worked for myself in the past.
 - About and contact header is not responsive on mobile, yet it is on the home page, needs looking at.
+- CSS relating to testimonials could be improved on mobile.
